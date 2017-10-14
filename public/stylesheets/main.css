@@ -1,0 +1,28 @@
+
+.thumbnail {
+	padding: 0;
+}
+
+.caption{
+	padding: 8px;
+	margin: 0 10px;
+}
+
+.inlineBtn{
+	display: inline;
+}
+
+.btn-xs {
+	line-height: 14px;
+	height: 16px;
+}
+
+hr {
+	border-color: rgb(216, 216, 216);
+	width: 95%
+}
+.trade{
+	position: fixed;
+	left: 92%;
+	bottom: 20px;
+}

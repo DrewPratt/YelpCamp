@@ -1,0 +1,27 @@
+<% include ../partials/header %>
+<div class="container"><header class="jumbotron">
+		<h1>Welcome to DrewCamp!</h1>
+		<p>View our handpicked campgrounds from all over the world.</p>
+		<a class="btn btn-primary btn-lg" href="/campgrounds/new">Create a new campground
+		</a>
+	</header>
+	
+	
+	
+	<div class="row text-center" style="display: flex; flex-wrap: wrap;">
+		<% campgrounds.forEach(function (camp){ %>
+		
+			<div class="col-md-3 col-md-6">
+				<div class="thumbnail">
+					<img src="<%= camp.image %>" width="500">
+					<div class="caption">
+						<h4> <%= camp.name %></h4>
+						<a href="/campgrounds/<%= camp._id %>" class="btn btn-primary">More Info</a>
+					</div>
+				</div>
+			</div>
+		<% }) %></div>
+	</div>
+
+
+<% include ../partials/footer %>
