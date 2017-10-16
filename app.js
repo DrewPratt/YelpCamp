@@ -3,7 +3,7 @@
 
 //required packages
 const express 				= require('express'),
-	  expressSession		= require('express-session')
+	  expressSession		= require('express-session'),
 	  app 					= express(),
 	  bodyParser 			= require('body-parser'),
 	  passport 				= require('passport'),
