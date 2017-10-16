@@ -4,3 +4,4 @@ node_modules
 seeds.js
 npm-debug.log
 .eslintrc.json
+.vscode
