@@ -13,8 +13,8 @@ const express 				= require('express'),
 	  methodOverride		= require('method-override'),
 	  Campground 			= require('./models/campground'),
 	  User 					= require('./models/user'),
-	  Comment				= require('./models/comment'),
-	  seedDB 				= require('./seeds');
+	  Comment				= require('./models/comment');
+	//   seedDB 				= require('./seeds');
 const app 					= express();
 	  //required external route files
 const campgroundRoutes		= require('./routes/campgrounds'),
