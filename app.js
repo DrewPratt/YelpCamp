@@ -23,8 +23,8 @@ const campgroundRoutes		= require('./routes/campgrounds'),
 
 // seedDB();
 
-// mongoose.connect('mongodb://localhost/drew_camp');
-mongoose.connect('mongodb://Drew:campy@ds239965.mlab.com:39965/drewcamp', {useMongoClient: true});
+mongoose.connect(process.env.DATABASEURL);
+// mongoose.connect('mongodb://Drew:campy@ds239965.mlab.com:39965/drewcamp', {useMongoClient: true});
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static(__dirname + '/public'))
 //app.use(express.static('public/imgs'))
@@ -55,6 +55,6 @@ app.use('/', indexRoutes);
 app.use('/campgrounds', campgroundRoutes);
 app.use('/campgrounds/:id/comments', commentRoutes);
 
-app.listen(process.env.PORT, function(req, res){
+app.listen(process.env.PORT, process.env.IP, function(req, res){
 	console.log('Get your motor RUNNIN!');
 })
