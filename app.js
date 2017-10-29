@@ -55,6 +55,6 @@ app.use('/', indexRoutes);
 app.use('/campgrounds', campgroundRoutes);
 app.use('/campgrounds/:id/comments', commentRoutes);
 
-app.listen(3100, function(req, res){
+app.listen(process.env.PORT, function(req, res){
 	console.log('Get your motor RUNNIN!');
 })
