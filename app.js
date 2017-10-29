@@ -3,8 +3,7 @@
 
 //required packages
 const express 				= require('express'),
-	  expressSession		= require('express-session'),
-	  app 					= express(),
+	  expressSession		= require('express-session')
 	  bodyParser 			= require('body-parser'),
 	  passport 				= require('passport'),
 	  LocalStrategy 		= require('passport-local'),
@@ -16,7 +15,8 @@ const express 				= require('express'),
 	  User 					= require('./models/user'),
 	  Comment				= require('./models/comment'),
 	  seedDB 				= require('./seeds');
-//required external route files
+const app 					= express();
+	  //required external route files
 const campgroundRoutes		= require('./routes/campgrounds'),
 	  commentRoutes			= require('./routes/comments'),
 	  indexRoutes			= require('./routes/index');
