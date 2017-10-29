@@ -24,7 +24,7 @@ const campgroundRoutes		= require('./routes/campgrounds'),
 // seedDB();
 
 // mongoose.connect('mongodb://localhost/drew_camp');
-mongoose.connect('mongodb://Drew:campy@ds239965.mlab.com:39965/drewcamp');
+mongoose.connect('mongodb://Drew:campy@ds239965.mlab.com:39965/drewcamp', {useMongoClient: true});
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static(__dirname + '/public'))
 //app.use(express.static('public/imgs'))
