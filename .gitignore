@@ -1,7 +1,6 @@
 mongodb-osx-x86_64-3.4.4
 data
 node_modules
-seeds.js
 npm-debug.log
 .eslintrc.json
 .vscode
